@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import re
 import matplotlib.pyplot as plt
-import datetime as dt
 import string
 import pymorphy2
 morph = pymorphy2.MorphAnalyzer()
@@ -198,4 +197,8 @@ input_txt.pack()
 btn3.pack()
 btn4.pack()
 
-root.mainloop()
+def main():
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
