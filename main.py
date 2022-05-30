@@ -92,9 +92,9 @@ def date_count():
         count_news.append(len(year_df))
         avg_words.append(year_df['words count'].mean())
         max_words.append(max(year_df['words count']))
-    ax1.bar(dates, count_news, color='w', linewidth=1.0, edgecolor='k')
-    ax2.bar(dates, avg_words, color='b')
-    ax3.bar(dates, max_words, color='r')
+    ax1.bar(dates, count_news)
+    ax2.bar(dates, avg_words)
+    ax3.bar(dates, max_words)
     plt.show()
     
 def lemma(text):
